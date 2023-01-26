@@ -133,7 +133,7 @@ remainder用以接收余数
 
 # 实例程序
 
-以下包含一段演示的程序
+以下包含一段演示基本运算的程序
 
 ```c++
 #include<iostream>
@@ -149,10 +149,18 @@ int main(){
     //获取乘法运算结果
     BigInteger result1=i1*i2;
     
+    //获取加法结果
+    BigInteger result2=i1+i2;
+    
+    //在i1上加上i2
+    i1+=i2;
+    
+    //...依次类推
+    
     //打印二进制数据表示的具体10进制数字
     std::cout<<result1.toString()<<std::endl;
 }
 
 ```
 
-其他的实现以此类推
+其他用法详情见BigInteger.h头文件
